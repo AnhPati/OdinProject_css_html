@@ -1,0 +1,136 @@
+/*=====[[ BASE ]]=====*/
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*=====[[ LAYOUT ]]=====*/
+
+/*=====[[ TYPOGRAPHY ]]=====*/
+
+.title-sm {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.title-md {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.title-lg {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.paragraph-sm {
+    font-family:'Heebo', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.paragraph-md {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.paragraph-lg {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+/*=====[[ UTILITARY ]]=====*/
+
+.uBox-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uBox-flex.fullCentered {
+    justify-content: center;
+    align-items: center;
+}
+
+.uMargin-top-nav {
+    margin-top: 10rem;
+}
+
+/*=====[[ COMPONENT ]]=====*/
+.cBtn {
+    background-color: transparent;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-style: outset;
+    border-image: initial;
+    margin-bottom: 0;
+    color: black;
+    white-space: nowrap;
+}
+
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*=====[[ NAVIGATION ]]=====*/
+
+.navContainer {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.navContainer-item {
+
+}
+
+.navItem {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    height: 5rem;
+}
+
+.navItem-searchInput {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    font-family: 'Heebo', sans-serif;
+}
+
+.navItem-searchInput {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+}
+
+.navItem-searchInput::placeholder {
+    font-size: 1.4rem;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navItem-icon {
+    width: 4rem;
+}
+
+.navItem-text {
+    padding-left: 0.4rem;
+    color: #16A085;
+}
+
+.navItem-profil {
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        padding-top: 0.5rem;
+}
