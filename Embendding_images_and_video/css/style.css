@@ -62,6 +62,18 @@ ul {
     align-items: center;
 }
 
+.uBox-flexColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.uBox-flexColumn.fullCentered {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /*=====[[ COMPONENT ]]=====*/
 .cBtn {
     background-color: transparent;
@@ -106,6 +118,10 @@ ul {
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgba(0, 0, 0, .9);
+    height: 5rem;
+    /* position: fixed;
+    z-index: 200;
+    width: 100% */
 }
 
 .navContainer-item {
@@ -120,12 +136,9 @@ ul {
 }
 
 .navItem-searchInput {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
     font-family: 'Heebo', sans-serif;
-}
-
-.navItem-searchInput {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    margin: 1.3rem 0 1.3rem 0;
 }
 
 .navItem-searchInput::placeholder {
@@ -135,8 +148,12 @@ ul {
     text-align: center;
 }
 
+.navItem-btn {
+    margin: 1.3rem 0 1.3rem 0;
+}
+
 .navItem-icon {
-    width: 4rem;
+    width: 2rem;
 }
 
 .navItem-text {
@@ -145,9 +162,10 @@ ul {
 }
 
 .navItem-profil {
-        border-radius: 50%;
-        background-color: #FFFFFF;
-        padding-top: 0.5rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    height: 1.8rem;
 }
 
 /*=====[[ VIDEO ]]=====*/
