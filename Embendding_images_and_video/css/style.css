@@ -32,6 +32,12 @@ ul {
     font-weight: 800;
 }
 
+.paragraph-xs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .paragraph-sm {
     font-family:'Heebo', sans-serif;
     font-size: 1.4rem;
