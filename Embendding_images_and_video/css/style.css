@@ -62,10 +62,6 @@ ul {
     align-items: center;
 }
 
-.uMargin-top-nav {
-    margin-top: 10rem;
-}
-
 /*=====[[ COMPONENT ]]=====*/
 .cBtn {
     background-color: transparent;
@@ -76,12 +72,31 @@ ul {
     margin-bottom: 0;
     color: black;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .imgResponsive {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*=====[[ NAVIGATION ]]=====*/
@@ -133,4 +148,18 @@ ul {
         border-radius: 50%;
         background-color: #FFFFFF;
         padding-top: 0.5rem;
+}
+
+/*=====[[ VIDEO ]]=====*/
+
+.videoContainer {
+    padding-left: 22%;
+    padding-right: 22%;
+    background-color: #000000;
+}
+
+/*=====[[ VIDEO ]]=====*/
+
+.mainContainer {
+    padding: 1rem 6rem;
 }
