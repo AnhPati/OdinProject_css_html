@@ -12,48 +12,70 @@ ul {
 
 /*=====[[ LAYOUT ]]=====*/
 
+.mainContainer {
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
 /*=====[[ TYPOGRAPHY ]]=====*/
+
+.title-xxs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.title-xs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
 
 .title-sm {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
 .title-md {
     font-family: 'Heebo', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .title-lg {
     font-family: 'Heebo', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 800;
+}
+
+.paragraph-xxs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .paragraph-xs {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .paragraph-sm {
     font-family:'Heebo', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .paragraph-md {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
 .paragraph-lg {
     font-family: 'Heebo', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 /*=====[[ UTILITARY ]]=====*/
@@ -80,8 +102,30 @@ ul {
     flex-wrap: wrap;
 }
 
+.uMargin-no {
+    margin: 0;
+}
+
+.uMargin-bottom-sm {
+    margin-bottom: 0.5rem;
+}
+
+.uMargin-bottom-md {
+    margin-bottom: 0.8rem;
+}
+
+.uSpacing-border {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+     width: 100%;
+     border-bottom: 1px solid rgba(158, 155, 155, 0.4);
+}
+
 /*=====[[ COMPONENT ]]=====*/
 .cBtn {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
     background-color: transparent;
     padding: 0.5rem;
     border: 1px solid transparent;
@@ -91,8 +135,34 @@ ul {
     color: black;
     white-space: nowrap;
     cursor: pointer;
+    text-transform: uppercase;
+    }
+
+.cBtn-abonnement {
+    background-color: #16A085;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
+.cBtn-abonnement:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #16A085;
+    border-radius: 5px;
+    color: #16A085 ;
+}
+
+/*Image du lien vers le profil --> <"conteneur"> --> <img> */
+.imgProfil {
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    height: 1.8rem;
+    width: 2rem;
+    display: block;
+    background-color: #000000;
+}
+
+/*Image responsive --> <"img"> */
 .imgResponsive {
     max-width: 100%;
     height: auto;
@@ -115,6 +185,12 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.collapseLink, .popoverLink {
+    text-decoration: none;
+    color: rgba(158, 155, 155);
+    text-transform: uppercase;
 }
 
 /*=====[[ NAVIGATION ]]=====*/
@@ -167,23 +243,109 @@ ul {
     color: #16A085;
 }
 
-.navItem-profil {
-    border-radius: 50%;
+.navItem-profilColor {
     background-color: #FFFFFF;
-    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
-    height: 1.8rem;
 }
 
 /*=====[[ VIDEO ]]=====*/
 
 .videoContainer {
-    padding-left: 22%;
-    padding-right: 22%;
     background-color: #000000;
+    margin-bottom: 2rem;
 }
 
-/*=====[[ VIDEO ]]=====*/
+/*=====[[ COMMENTARY ]]=====*/
 
-.mainContainer {
-    padding: 1rem 6rem;
+.contentContainer {
+    justify-content: space-around;
+}
+
+.contentContainer-commentary {
+    flex-grow: 1;
+}
+
+.contentContainer-videoChoice {
+    width: 10rem;
+}
+
+.commentaryMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.commentaryMenu-info {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commentaryMenu-infoItem {
+    padding-right: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(158, 155, 155);
+}
+
+.commentaryMenu-hashtagLink {
+    text-decoration: none;
+    padding-right: 0.4rem;
+    color: blue;
+}
+
+.commentaryMenu-img {
+    width: 1.4rem;
+    vertical-align: middle;
+    padding-right: 0.6rem;
+}
+
+.commentaryMenu-infoLike {
+    align-items: center;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgba(158, 155, 155);
+}
+
+.commentaryInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.commentaryInfo-title {
+    justify-content: space-between;
+}
+
+.commentaryInfo-titleBox {
+    text-decoration: none;
+    color: #000000;
+}
+
+.commentaryInfo-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.commentaryView {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commentaryView-item {
+    padding-right: 1rem;
+}
+
+.commentaryView-img {
+    width: 1.6rem;
+}
+
+.newCommentary-btn {
+    display: none;
+}
+
+.newCommentary-btn:hover {
+    background-color: rgba(22, 160, 133, 0.4);
+    color:#FFFFFF;
 }
