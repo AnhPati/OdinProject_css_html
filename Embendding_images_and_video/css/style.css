@@ -102,16 +102,20 @@ ul {
     flex-wrap: wrap;
 }
 
+.uWidth-100 {
+    width: 100%;
+}
+
 .uMargin-no {
     margin: 0;
 }
 
-.uMargin-bottom-sm {
+.uMargin-bottom-xs {
     margin-bottom: 0.5rem;
 }
 
 .uMargin-bottom-md {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.4rem;
 }
 
 .uSpacing-border {
@@ -119,6 +123,14 @@ ul {
     padding-bottom: 0.8rem;
      width: 100%;
      border-bottom: 1px solid rgba(158, 155, 155, 0.4);
+}
+
+.uInvisibility {
+    visibility: hidden;
+}
+
+.uInvisibility:hover {
+    visibility: visible;
 }
 
 /*=====[[ COMPONENT ]]=====*/
@@ -150,6 +162,13 @@ ul {
     border: 1px solid #16A085;
     border-radius: 5px;
     color: #16A085 ;
+}
+
+.cForm-addComment {
+    border: none;
+    border-bottom: 1px solid rgba(158, 155, 155, 0.4);
+    resize: none;
+    color: rgba(158, 155, 155);
 }
 
 /*Image du lien vers le profil --> <"conteneur"> --> <img> */
@@ -334,11 +353,12 @@ ul {
 }
 
 .commentaryView-item {
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 .commentaryView-img {
     width: 1.6rem;
+    margin-right: 0.5rem;
 }
 
 .newCommentary-btn {
@@ -348,4 +368,21 @@ ul {
 .newCommentary-btn:hover {
     background-color: rgba(22, 160, 133, 0.4);
     color:#FFFFFF;
+}
+
+.commentaryRead-form {
+    margin-left: 1rem;
+    flex: 1 0 auto;
+}
+
+.noMoreComment {
+    display: none;
+}
+
+.commentaryRead-item {
+    display: flex;
+}
+
+.commentaryRead-img {
+    width: 2rem;
 }
