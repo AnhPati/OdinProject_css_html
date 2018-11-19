@@ -10,7 +10,7 @@
     </head>
     <body>
         <!--Une barre fixe verticale...-->
-        <header>
+        <header class="navFixed-100">
             <!--... qui contient le menu de navigation.-->
             <nav class="uBox-flex navContainer">
                 <!--Il se compose d'une 1ère partie contenant : -->
@@ -77,14 +77,14 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section class="videoContainer mainContainer">
+        <main class="">
+            <section class="videoContainer mainContainer navFixed-marginSibiling">
                 <div class='embed-container'>
                     <iframe src="https://www.youtube.com/embed/7TpVD7sZUbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                 </div>
             </section>
-            <section class="mainContainer contentContainer uBox-flex">
+            <section class="mainContainer contentContainer">
                 <div class="contentContainer-commentary">
                     <div class="commentaryMenu uSpacing-border">
                         <div class="commentaryMenu-hashtag uMargin-bottom-xs">
@@ -103,15 +103,15 @@
                                 </p>
                             </a>
                             <div class="uBox-flex commentaryMenu-infoItem">
-                                <a href="#" class="uBox-flex commentaryMenu-infoLike">
+                                <a href="#" class="uBox-flex cBtnBox-infoLike">
                                     <div class="commentaryMenu-img">
                                         <img class="imgResponsive" src="img/agree.png" alt="">
                                     </div>
                                     <p class="paragraph-xs uMargin-no">92000</p>
                                 </a>
-                                <a href="#" class="uBox-flex commentaryMenu-infoLike">
+                                <a href="#" class="uBox-flex cBtnBox-infoLike">
                                     <div class="commentaryMenu-img">
-                                        <img  class="imgResponsive"src="img/disagree.png" alt="">
+                                        <img  class="imgResponsive" src="img/disagree.png" alt="">
                                     </div>
                                     <p class="paragraph-xs uMargin-no">971</p>
                                 </a>
@@ -190,12 +190,12 @@
                             </div>
                         </a>
                     </div>
-                    <div class="commentaryRead">
+                    <div class="commentaryRead uMargin-bottom-md">
                         <div class="uBox-flex fullCentered uWidth-100 uMargin-bottom-md">
                             <div class="imgRounded imgProfil">
                                 <img class="imgResponsive" src="img/nav-profil.png" alt="">
                             </div>
-                            <form class="commentaryRead-form"action="">
+                            <form class="commentaryRead-form" action="">
                                 <div>
                                     <textarea class="paragraph-md uWidth-100 cForm-addComment" name="newCommentary" id="#newCommentary" rows="1" placeholder="Ajouter un commentaire"></textarea>
                                 </div>
@@ -205,52 +205,49 @@
                                 </div>
                             </form>
                         </div>
-                        <div  class="commentaryRead-item uWidth-100">
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
                             <div>
                                 <div class="imgRounded imgProfil">
                                     <img class="imgResponsive" src="img/nav-profil.png" alt="">
                                 </div>
                             </div>
-                            <div>
+                            <div class="commentaryRead-itemContent">
                                 <div class="uBox-flex">
-                                    <div>
-                                        <a href="#">
-                                            <p class="paragraph-xs">
-                                                Igor Aiduppindure
-                                            </p>
-                                        </a>
-                                    <div>
-                                        <a href="#">
-                                            <p class="paragraph-xs">
-                                                il y a 6 heures
-                                            </p>
-                                        </a>
-                                    </div>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
                                 </div>
                                 <div>
                                     <div>
-                                        <p class="paragraph-sm">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en toute discrétion, une fois couché, j'écoute cette musique !</p>
                                     </div>
                                     <div>
                                         <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="uBox-flex">
-                                        <div class="uBox-flex">
-                                            <div class="commentaryRead-img">
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
                                                 <img class="imgResponsive" src="img/agree.png" alt="">
-                                            </div>
+                                            </a>
                                             <div>
-                                                <p>26</p>
+                                                <p class="paragraph-xs uMargin-no">26</p>
                                             </div>    
                                         </div>
-                                        <div class="uBox-flex">
-                                            <div class="commentaryRead-img">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
                                                 <img class="imgResponsive" src="img/disagree.png" alt="">
-                                            </div>
+                                            </a>
                                             <div>
-                                                <p></p>
+                                                <p class="paragraph-xs uMargin-no">9</p>
                                             </div>  
                                         </div>
                                     </div>
@@ -261,41 +258,765 @@
                                     </div>
                                 </div>  
                             </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="uInvisibility">
-                                <a class="commentaryRead-img" href="#">
-                                    <img src="img/more.png" alt="">
-                                </a>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en
+                                            toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                            Répondre
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en
+                                            toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                            Répondre
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>    
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                                Répondre
+                                        </a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>    
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                                Répondre
+                                        </a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en
+                                            toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                            Répondre
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en
+                                            toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                            Répondre
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentaryRead-item uWidth-100 uInvisibility-container">
+                            <div>
+                                <div class="imgRounded imgProfil">
+                                    <img class="imgResponsive" src="img/nav-profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="commentaryRead-itemContent">
+                                <div class="uBox-flex">
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            Igor Aiduppindure
+                                        </p>
+                                    </a>
+                                    <a class="commentaryRead-titleItem" href="#">
+                                        <p class="paragraph-xs">
+                                            il y a 6 heures
+                                        </p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="paragraph-xs">Vraiment des fois, tu parles trop. Mais bon je ne peux te baillonner. Alors en
+                                            toute discrétion, une fois couché, j'écoute cette musique !</p>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm collapseLink noMoreComment" href="">Plus</a>
+                                    </div>
+                                </div>
+                                <div class="uBox-flex">
+                                    <div class="uBox-flex fullCentered">
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/agree.png" alt="">
+                                            </a>
+                                                <p class="paragraph-xs uMargin-no">26</p>
+                                            </div>
+                                        </div>
+                                        <div class="uBox-flex fullCentered cBtnBox-infoLike">
+                                            <a class="commentaryRead-img" href="#">
+                                                <img class="imgResponsive" src="img/disagree.png" alt="">
+                                            </a>
+                                            <div>
+                                                <p class="paragraph-xs uMargin-no">9</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="paragraph-sm popoverLink" href="#">
+                                            Répondre
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uBox-flex fullCentered">
+                                <div class="uInvisibility-item">
+                                    <a class="commentaryRead-img" href="#">
+                                        <img class="imgResponsive" src="img/more.png" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contentContainer-videoChoice">
-                    <div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
                         <div>
-                            <a href="">
-
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/brel.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <div>
+                        <a class="videoChoice-titleBox">
                             <div>
-                                <h3>
-
+                                <h3 class="title-xxs uMargin-no">
+                                    Quand on a que l'amour
                                 </h3>
                             </div>
                             <div>
-                                <p>
-
+                                <p class="paragraph-xxs uMargin-no">
+                                    BrelOfficiel
                                 </p>
-                                <p>
-
+                                <p class="paragraph-xxs uMargin-no">
+                                    24.000 vues
                                 </p>
                             </div>
+                        </a>
+                        <div class="uInvisibility-item"> 
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
                         </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
                         <div>
-                            <a href="">
-
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/warped.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Woman
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    WarpedOfficiel971
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    999.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/celine.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Pour que tu m'aimes encore
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    CélineDionOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    2M vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/chaton.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Sois pas gêné
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    ChatonQuiMiauleOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    4.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/doozkawa.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Conte cruel de ma jeunesse
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    DoozKawaOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    33.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/brel.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Quand on a que l'amour
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    BrelOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    24.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item"> 
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/warped.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Woman
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    WarpedOfficiel971
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    999.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/celine.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Pour que tu m'aimes encore
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    CélineDionOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    2M vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/chaton.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Sois pas gêné
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    ChatonQuiMiauleOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    4.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="videoChoice-item uSpacing-border uInvisibility-container">
+                        <div>
+                            <a class="videoChoice-img" href="#">
+                                <img class="imgResponsive" src="img/doozkawa.jpg" alt="">
+                                <div class="uInvisibility-item videoChoice-itemHover uBox-flex fullCentered">
+                                    <div class="videoChoice-imgHover">
+                                        <img class="imgResponsive" src="img/play.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="videoChoice-titleBox">
+                            <div>
+                                <h3 class="title-xxs uMargin-no">
+                                    Conte cruel de ma jeunesse
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="paragraph-xxs uMargin-no">
+                                    DoozKawaOfficiel
+                                </p>
+                                <p class="paragraph-xxs uMargin-no">
+                                    33.000 vues
+                                </p>
+                            </div>
+                        </a>
+                        <div class="uInvisibility-item">
+                            <a class="videoChoice-moreBtn" href="#">
+                                <img class="imgResponsive" src="img/more.png" alt="">
                             </a>
                         </div>
                     </div>

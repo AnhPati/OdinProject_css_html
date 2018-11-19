@@ -13,8 +13,8 @@ ul {
 /*=====[[ LAYOUT ]]=====*/
 
 .mainContainer {
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 /*=====[[ TYPOGRAPHY ]]=====*/
 
@@ -125,11 +125,11 @@ ul {
      border-bottom: 1px solid rgba(158, 155, 155, 0.4);
 }
 
-.uInvisibility {
+.uInvisibility-item {
     visibility: hidden;
 }
 
-.uInvisibility:hover {
+.uInvisibility-container:hover .uInvisibility-item {
     visibility: visible;
 }
 
@@ -148,7 +148,14 @@ ul {
     white-space: nowrap;
     cursor: pointer;
     text-transform: uppercase;
-    }
+}
+
+.cBtnBox-infoLike {
+    align-items: center;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgba(158, 155, 155);
+}
 
 .cBtn-abonnement {
     background-color: #16A085;
@@ -214,15 +221,23 @@ ul {
 
 /*=====[[ NAVIGATION ]]=====*/
 
+.navFixed-100 {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+.navFixed-marginSibiling {
+    padding-top: 5rem;
+    background-color: #000000;
+}
+
 .navContainer {
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgba(0, 0, 0, .9);
     height: 5rem;
-    /* position: fixed;
-    z-index: 200;
-    width: 100% */
 }
 
 .navContainer-item {
@@ -276,15 +291,17 @@ ul {
 /*=====[[ COMMENTARY ]]=====*/
 
 .contentContainer {
+    display: flex;
     justify-content: space-around;
 }
 
 .contentContainer-commentary {
     flex-grow: 1;
+    padding-right: 2rem;
 }
 
 .contentContainer-videoChoice {
-    width: 10rem;
+    
 }
 
 .commentaryMenu {
@@ -316,13 +333,6 @@ ul {
     width: 1.4rem;
     vertical-align: middle;
     padding-right: 0.6rem;
-}
-
-.commentaryMenu-infoLike {
-    align-items: center;
-    padding-right: 1rem;
-    text-decoration: none;
-    color: rgba(158, 155, 155);
 }
 
 .commentaryInfo {
@@ -370,6 +380,21 @@ ul {
     color:#FFFFFF;
 }
 
+.commentaryRead-item {
+    margin-bottom: 2rem;
+}
+
+.commentaryRead-itemContent {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.commentaryRead-titleItem {
+    text-decoration: none;
+    color: #000000;
+    padding-right: 1rem;
+}
+
 .commentaryRead-form {
     margin-left: 1rem;
     flex: 1 0 auto;
@@ -384,5 +409,41 @@ ul {
 }
 
 .commentaryRead-img {
-    width: 2rem;
+    width: 1.8rem;
+}
+
+.videoChoice-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    position: relative;
+}
+
+.videoChoice-itemHover {
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0.475rem;
+    width: 10rem;
+    height: 6rem;
+}
+
+.videoChoice-imgHover {
+    width: 5rem;
+}
+
+.videoChoice-img {
+    width: 10rem;
+    display: block;
+    padding: 0.5rem;
+}
+
+.videoChoice-titleBox {
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+}
+
+.videoChoice-moreBtn {
+    width: 1rem;
+    display: block;
 }
