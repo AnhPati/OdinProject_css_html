@@ -1,0 +1,177 @@
+/*=====[[ BASE ]]=====*/
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/*=====[[ LAYOUT ]]=====*/
+
+.main-container {
+    background-color: #ECEEF1;
+}
+
+.accountContainer-item {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+/*=====[[ TOPOGRAPHY ]]=====*/
+
+.paragraph-xxs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.5rem;
+    font-weight: 200;
+}
+
+.paragraph-xs {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.paragraph-md {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.title-md {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+/*=====[[ UTILITARY ]]=====*/
+
+.uBox-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uBox-flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.uMargin-bottom-sm {
+ margin-bottom: 1rem;
+}
+
+.uMargin-none {
+    margin: 0;
+}
+
+/*=====[[ COMPOSANT ]]=====*/
+
+.cBtn {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.3rem 1.1rem 0.3rem 1.1rem;
+    border: 1px solid transparent;
+    border-style: inset;
+    border-image: initial;
+    border-radius: 5px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.cBtn-blue {
+    background-color: #127BCB;
+    border-color: #0e66a5;
+    color: #ffffff;
+}
+
+.cLink {
+    color: #127BCB;
+    text-decoration: none;
+}
+
+/*=====[[ ACCOUNT CONNEXION ]]=====*/
+
+.accountConnexion {
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.accountConnexion-item {
+    padding-left: 0.5rem;
+}
+
+.accountConnexion-btn::before {
+    content: url(../img/cadenas.svg);
+    width: 1rem;
+}
+
+/*=====[[ ACCOUNT LOGO ]]=====*/
+
+.accountLogo {
+    align-items: center;
+}
+
+.logoImg {
+    background-image: url(../img/ecosystem_logos_new.png);
+    height: 35px;
+    width: 118px;
+    display: block;
+    animation: 733ms fade-in ease-in forwards;    
+}
+
+.subLogo {
+    display: block;
+    height: 23px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.subLogo-img {
+    width: 23px;
+}
+
+.mint-img {
+    background-image: url(../img/mint-logo.png);
+}
+
+.mint-text {
+    background-image: url(../img/mint-text.png);
+    width: 38px;
+}
+
+.quickbooks-img {
+    background-image: url(../img/quickbooks-logo.png);
+}
+
+.quickbooks-text {
+    background-image: url(../img/quickbooks-text.png);
+    width: 99px;
+}
+
+.turbotax-img {
+    background-image: url(../img/turbotax-logo.png);
+}
+
+.turbotax-text {
+    background-image: url(../img/turbotax-text.png);
+    width: 72px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*=====[[ ACCOUNT INSCRIPTION ]]=====*/
+
+.accountInscription {
+    width: 380px;
+    background-color: #FFFFFF;
+    border: solid 1px #000000;
+}
