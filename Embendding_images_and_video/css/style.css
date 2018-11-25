@@ -134,6 +134,7 @@ ul {
 }
 
 /*=====[[ COMPONENT ]]=====*/
+
 .cBtn {
     font-family: 'Heebo', sans-serif;
     font-size: 1.2rem;
@@ -447,3 +448,74 @@ ul {
     width: 1rem;
     display: block;
 }
+
+/*=====[[ COMPONENT ]]=====*/
+
+@media screen and (max-width: 992px) {
+    .mainContainer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .responsiveNone-821 {
+        display: none;
+    }
+
+    .contentContainer {
+        flex-wrap: wrap;
+    }
+
+    .contentContainer-commentary {
+        padding-right: 0;
+    }
+
+    .videoChoice-item {
+        width: 100%;
+    }
+
+    .videoChoice-img {
+        width: 27.5rem;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    .responsiveNone-663 {
+        display: none;
+    }
+
+    .videoChoice-img {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .responsiveNone-508 {
+        display: none;
+    }
+
+    .commentaryInfo {
+        flex-wrap: wrap;
+    }
+
+    .commentaryMenu-infoItem {
+        padding-bottom: 0.5rem;
+    }
+
+    .mainContainer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 309px) {
+    .videoChoice-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .responsiveNone-309 {
+        display: none;
+    }
+}  
