@@ -1,0 +1,96 @@
+/*=====[[ BASE ]]=====*/
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/*=====[[ WIP ]]=====*/
+
+.wipCollapse {
+    display: none;
+}
+
+/*=====[[ LAYOUT ]]=====*/
+
+/*=====[[ TYPOGRAPHY ]]=====*/
+
+/*=====[[ UTILITARY ]]=====*/
+
+.uBox-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.uPadding-sm {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.uMargin-none {
+    margin: 0;
+}
+
+/*=====[[ COMPONENT ]]=====*/
+.cBtn {
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.8rem 0.8rem 0.3rem 0.8rem;
+    border: 1px solid #000000;
+    border-style: inset;
+    border-image: initial;
+    border-radius: 4px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.cBtn-blue {
+    color: #FFFFFF;
+    background-color: #6288A5;
+}
+
+.cLink-black {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Image responsive --> <"img"> */
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*=====[[ NAVIGATION ]]=====*/
+
+.headerFixed-100 {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+.headerContainer {
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.navSearch-btn {
+    width: 15px;
+}
+
+.navSearch-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mainLogo {
+    width: 12rem;
+}
