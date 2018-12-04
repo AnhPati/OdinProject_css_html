@@ -152,6 +152,10 @@ ul {
     color: #326891;
 }
 
+.cBtn-xl {
+    padding: 0.7rem 6.5rem 0.7rem 6.5rem;
+}
+
 /*Image responsive --> <"img"> */
 .imgResponsive {
     max-width: 100%;
@@ -355,6 +359,7 @@ ul {
 
 .article-paragraph {
     margin: 0 0 1rem 0;
+    width: 100%;
 }
 
 .title-article {
@@ -444,4 +449,28 @@ ul {
 
 .articleVideo-caption {
     margin-left: 0;
+}
+
+.article-img {
+    width: auto;
+    max-width: 630px;
+    margin: 0;
+}
+
+.articleImg-caption {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.linkCaption {
+    text-decoration: none;
+    color: #999;
+}
+
+.articleComment {
+    width: 100%;
+}
+
+.articleComment-container {
+    justify-content: space-between!important;
 }
