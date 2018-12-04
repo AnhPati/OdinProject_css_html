@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Positioning and floating elements</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
     <header class="headerFixed-100">
@@ -46,10 +47,10 @@
             </div>
             <div>
                 <div class="uBox-flex uPadding-sm">
-                    <button class="cBtn cBtn-blue">
+                    <button class="cBtn cBtn-blue uMargin-xxs">
                         Subscribe now
                     </button>
-                    <button class="cBtn cBtn-blue">
+                    <button class="cBtn cBtn-blue uMargin-xxs">
                         Log in
                     </button>
                 </div>
@@ -61,9 +62,352 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
+    <main class="headerFixed-margin mainContainer">
+        <section class="publicitySection uBox-flex">
+            <div class="publicityContainer uBox-flex">
+               
+            </div>
+        </section>
+        <section class="articleSection">
+            <div class="articleHeader-container uBox-flex">
+                <div class="articleTitle-box uMargin-top-md">
+                    <h1 class="title-xl">
+                        Space Ripples Reveal<br> Big Bang’s Smoking Gun
+                    </h1>
+                </div>
+                <figure class="articleHeader-img">
+                    <img class="imgResponsive" src="img/18cosmos-superJumbo.jpg" alt="Space Ripples Reveal Big Bang’s Smoking Gun">
+                    <figcaption class="articleHeader-caption uMargin-top-xxs">
+                        <p class="textCaption paragraph-sm uMargin-none">
+                            Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe
+                            expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.
+                        </p>
+                        <p class="autorCaption paragraph-xs uMargin-none">
+                            Rick Friedman for The New York Times
+                        </p>
+                    </figcaption>
+                </figure>
+                <div class="articleHeader-share uMargin-bottom-sm">
+                    <div class="headerShare-title uMargin-top-xxs">
+                        <p class="shareTitle paragraph-sm uMargin-none">
+                            By <a class="articleHeader-link" href="">Dennis Overbye</a>
+                        </p>
+                    </div>
+                    <div class="uMargin-top-xxs">
+                        <ul class="headerShare-content uMargin-none">
+                            <li class="uBox-flex">
+                                <p class="shareDate paragraph-xs uMargin-none">
+                                    March 17, 2014
+                                </p>
+                            </li>
+                            <li class="uBox-flex shareBtn-box">
+                                <a class="shareImg">
+                                    <svg class="" viewBox="0 0 24 24">
+                                        <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z" />
+                                    </svg>
+                                </a>
+                                <a class="shareImg">
+                                    <svg viewBox="0 0 26 26">
+                                        <g id="surface1">
+                                            <path style=" " d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 " />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="shareImg">
+                                    <svg viewBox="0 0 14 14">
+                                            <g>
+                                                <path style="fill:#030104;" d="M7,9L5.268,7.484l-4.952,4.245C0.496,11.896,0.739,12,1.007,12h11.986
+                                    			c0.267,0,0.509-0.104,0.688-0.271L8.732,7.484L7,9z" />
+                                                <path style="fill:#030104;" d="M13.684,2.271C13.504,2.103,13.262,2,12.993,2H1.007C0.74,2,0.498,2.104,0.318,2.273L7,8
+                                    			L13.684,2.271z" />
+                                                <polygon style="fill:#030104;" points="0,2.878 0,11.186 4.833,7.079 		" />
+                                                <polygon style="fill:#030104;" points="9.167,7.079 14,11.186 14,2.875 		" />
+                                            </g>
+                                    </svg>
+                                </a>
+                                <a class="shareImg">
+                                    <svg viewBox="0 -22 512 511">
+                                        <path d="m512 233.820312-212.777344-233.320312v139.203125h-45.238281c-140.273437 0-253.984375 113.710937-253.984375 253.984375v73.769531l20.09375-22.019531c68.316406-74.851562 164.980469-117.5 266.324219-117.5h12.804687v139.203125zm0 0"/>
+                                    </svg>
+                                </a>
+                                <a class="shareSave">
+                                    <svg stroke="none" width="16px" height="25px" viewBox="0 0 16 25" class="css-ubw31m">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g stroke="#666" fill="none">
+                                                <path fill="none" d="M0.5,0.5 L0.5,24.5 L8.1716264,19.5137775 L15.5,24.4404006 L15.5,0.5 L0.5,0.5 Z"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="shareComment">
+                                    <p class="uMargin-none">615</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="articleSection uMargin-bottom-sm">
+            <div class="articleContainer uBox-flex">
+                <article class="articleContent uBox-flex column uMargin-top-sm">
+                    <p class="paragraph-md article-paragraph">
+                        CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s
+                        appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known
+                        physics.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        He was trying to understand why there was no trace of some exotic particles that should have been created in the Big
+                        Bang. Instead he discovered what might have made the universe bang to begin with. A potential hitch in the presumed
+                        course of cosmic evolution could have infused space itself with a special energy that exerted a repulsive force,
+                        causing the universe to swell faster than the speed of light for a prodigiously violent instant.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        If true, the rapid engorgement would solve paradoxes like why the heavens look uniform from pole to pole and not like a
+                        jagged, warped mess. The enormous ballooning would iron out all the wrinkles and irregularities. Those particles were
+                        not missing, but would be diluted beyond detection, like spit in the ocean.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        “SPECTACULAR REALIZATION,” Dr. Guth wrote across the top of the page and drew a double box around it.
+                    </p>
+                </article>
+                <aside class="asideContent uBox-flex column">
+                
+                </aside>
+            </div>
+        </section>
+        <section class="publicitySection uBox-flex uMargin-bottom-md">
+            <div class="publicityContainer uBox-flex">
+        
+            </div>
+        </section>
+        <section class="articleSection uMargin-bottom-sm">
+            <div class="articleContainer uBox-flex">
+                <article class="articleContent uBox-flex column">
+                    <p class="paragraph-md article-paragraph">
+                        On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the Big Bang,
+                        and that his hypothesis, known undramatically as inflation, looked right.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Reaching back across 13.8 billion years to the <a class="cLink-blue" href="">first sliver of cosmic</a> time with telescopes at the South Pole, a team of
+                        astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in the fabric of
+                        space-time — so-called <a class="cLink-blue" href="">gravitational waves</a> — the signature of a universe being wrenched violently apart when it was
+                        roughly a trillionth of a trillionth of a trillionth of a second old. They are the long-sought smoking-gun evidence of
+                        inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth was correct.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Inflation has been the workhorse of cosmology for 35 years, though many, including Dr. Guth, wondered whether it could ever be proved.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        If corroborated, Dr. Kovac’s work will stand as a landmark in science comparable to the recent discovery of dark energy pushing the universe apart, or of the Big Bang itself. It would open vast realms of time and space and energy to science and speculation.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Confirming inflation would mean that the universe we see, extending 14 billion light-years in space with its hundreds of billions of galaxies, is only an infinitesimal patch in a larger cosmos whose extent, architecture and fate are unknowable. Moreover, beyond our own universe there might be an endless number of other universes bubbling into frothy eternity, like a pot of pasta water boiling over.
+                    </p>
+                    <h3 class="title-article title-sm">
+                        ‘As Big as It Gets’
+                    </h3>
+                    <p class="paragraph-md article-paragraph">
+                        In our own universe, it would serve as a window into the forces operating at energies forever beyond the reach of
+                        particle accelerators on Earth and yield new insights into gravity itself. Dr. Kovac’s ripples would be the first
+                        direct observation of gravitational waves, which, according to Einstein’s theory of general relativity, should ruffle
+                        space-time.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Marc Kamionkowski of Johns Hopkins University, an early-universe expert who was not part of the team, said, “This is
+                        huge, as big as it gets.”
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        He continued, “This is a signal from the very earliest universe, sending a telegram encoded in gravitational waves.”
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        The ripples manifested themselves as faint spiral patterns in a bath of microwave radiation that permeates space and
+                        preserves a picture of the universe when it was 380,000 years old and as hot as the surface of the sun.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Dr. Kovac and his collaborators, working in an experiment known as Bicep, for Background Imaging of Cosmic
+                        Extragalactic Polarization, reported their results in a scientific briefing at the Center for Astrophysics here on
+                        Monday and in a set of papers submitted to The Astrophysical Journal.
+                    </p>
+                    <h3 class="title-article title-sm">
+                        The Theory of Inflation
+                    </h3>
+                    <div class="doc-article uMargin-bottom-md">
+                        <img class="doc-img" src="img/inflation-720.png" alt="">
+                        <div class="doc-text dt1">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">THE UNIVERSE</span> is just under 14 billion years old. From our position in the Milky Way galaxy, we can observe a sphere that is now
+                                about 92 billion light-years across. But there's a mystery. Wherever we look, the universe has an even temperature.
+                            </p>
+                        </div>
+                        <div class="doc-text dt2">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">NOT ENOUGH TIME</span> The universe is not old enough for light to have traveled the vast distance from one side of the universe to the other,
+                                and there has not been enough time for scattered patches of hot and cold to mix into an even temperature.
+                            </p>
+                        </div>
+                        <div class="doc-text dt3">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">DISTANT COFFEE</span> At a smaller scale, imagine using a telescope to look a mile in one direction. You see a coffee cup, and from the
+                                amount of steam, you can estimate its temperature and how much it has cooled.
+                            </p>
+                        </div>
+                        <div class="doc-text dt4">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">COFFEE EVERYWHERE</span> Now turn around and look a mile in the other direction. You see a similar coffee cup, at exactly the same temperature.
+                                Coincidence? Maybe. But if you see a similar cup in every direction, you might want to look for another explanation.
+                            </p>
+                        </div>
+                        <div class="doc-text dt5">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">STILL NOT ENOUGH TIME</span> There has not been enough time to carry coffee cups from place to place before they get cold. But if all the coffee
+                                cups were somehow filled from a single coffee pot, all at the same time, that might explain their even temperature.
+                            </p>
+                        </div>
+                        <div class="doc-text dt6">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">INFLATION</span> solves this problem. The theory proposes that, less than a trillionth of a second after the Big Bang, the universe
+                                expanded faster than the speed of light. Tiny ripples in the violently expanding energy field eventually grew into the
+                                large-scale structures of the universe.
+                            </p>
+                        </div>
+                        <div class="doc-text dt7">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">FLUCTUATION</span> Astronomers have now detected evidence of these ancient fluctuations in swirls of polarized light in the cosmic
+                                background radiation, which is energy left over from the early universe. These are gravitational waves predicted by
+                                Einstein.
+                            </p>
+                        </div>
+                        <div class="doc-text dt8">
+                            <p class="paragraph-xxs">
+                                <span class="title-xs">EXPANSION</span> Returning to our coffee, imagine a single, central pot expanding faster than light and cooling to an even temperature
+                                as it expands. That is something like inflation. And the structure of the universe mirrors the froth and foam of the
+                                original pot.
+                            </p>
+                        </div>
+                        <div class="doc-footer">
+                            <p class="doc-autor uMargin-top-md">
+                                By LARRY BUCHANAN and JONATHAN CORUM
+                            </p>
+                        </div>
+                    </div>
+                    <p class="paragraph-md article-paragraphs">
+                        Dr. Kovac said the chance that the results were a fluke was only one in 10 million.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Dr. Guth, now 67, pronounced himself “bowled over,” saying he had not expected such a definite confirmation in his
+                        lifetime.
+                    </p>
+                </article>
+                <aside class="asideContent">
 
+                </aside>
+            </div>
+        </section>
+        <section class="publicitySection uBox-flex uMargin-bottom-md">
+            <div class="publicityContainer uBox-flex">
+        
+            </div>
+        </section>
+        <section class="articleSection uMargin-bottom-sm">
+            <div class="articleContainer uBox-flex">
+                <article class="articleContent uBox-flex column">
+                    <p class="paragraph-md article-paragraph">
+                        “With nature, you have to be lucky,” he said. “Apparently we have been lucky.”
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        The results are the closely guarded distillation of three years’ worth of observations and analysis. Eschewing email
+                        for fear of a leak, Dr. Kovac personally delivered drafts of his work to a select few, meeting with Dr. Guth, who is
+                        now a professor at Massachusetts Institute of Technology (as is his son, Larry, who was sleeping that night in 1979),
+                        in his office last week.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        “It was a very special moment, and one we took very seriously as scientists,” said Dr. Kovac, who chose his words as
+                        carefully as he tended his radio telescopes.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Andrei Linde of Stanford, a prolific theorist who first described the most popular variant of inflation, known as
+                        chaotic inflation, in 1983, was about to go on vacation in the Caribbean last week when Chao-Lin Kuo, a Stanford
+                        colleague and a member of Dr. Kovac’s team, <a class="cLink-blue" href="">knocked on his door with a bottle of Champagne</a> to tell him the news.
+                    </p>
+
+                    <figure class="uMargin-bottom-md uMargin-top-md">
+                        <div class="article-videoContainer">
+                            <iframe title="YouTube Video" class="embeddingVideo" src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                        <figcaption class="articleVideo-caption uMargin-top-xxs">
+                            <p class="textCaption paragraph-sm uMargin-none">
+                                Stanford Professor Andrei Linde celebrates physics breakthrough
+                            </p>
+                            <p class="autorCaption paragraph-xs uMargin-none">
+                                Video by StanfordUniversity
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <p class="paragraph-md article-paragraph">
+                        Confused, Dr. Linde called out to his wife, asking if she had ordered anything.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        “And then I told him that in the beginning we thought that this was a delivery but we did not think that we ordered
+                        anything, but I simply forgot that actually I did order it, 30 years ago,” Dr. Linde wrote in an email.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Calling from Bonaire, the Dutch Caribbean island, Dr. Linde said he was still hyperventilating. “Having news like this
+                        is the best way of spoiling a vacation,” he said.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        By last weekend, as social media was buzzing with rumors that inflation had been seen and news spread, astrophysicists
+                        responded with a mixture of jubilation and caution.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Max Tegmark, a cosmologist at M.I.T., wrote in an email, “I think that if this stays true, it will go down as one of
+                        the greatest discoveries in the history of science.”
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        John E. Carlstrom of the University of Chicago, Dr. Kovac’s mentor and head of a competing project called the South
+                        Pole Telescope, pronounced himself deeply impressed. “I think the results are beautiful and very convincing,” he said.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Paul J. Steinhardt of Princeton, author of a competitor to inflation that posits the clash of a pair of universes as
+                        the cause of genesis, said that if true, the Bicep result would eliminate his model, but he expressed reservations
+                        about inflation.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Lawrence M. Krauss of Arizona State and others also emphasized the need for confirmation, noting that the new results
+                        exceeded earlier estimates based on temperature maps of the cosmic background by the European Space Agency’s Planck
+                        satellite and other assumptions about the universe.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        “So we will need to wait and see before we jump up and down,” Dr. Krauss said.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Corroboration might not be long in coming. The Planck spacecraft will report its own findings this year. At least a
+                        dozen other teams are trying similar measurements from balloons, mountaintops and space.
+                    </p>
+                    <h3 class="title-article title-sm">
+                        Spirals in the Sky
+                    </h3>
+                    <p class="paragraph-md article-paragraph">
+                        Gravity waves are the latest and deepest secret yet pried out of the cosmic microwaves, which were discovered
+                        accidentally by Arno Penzias and Robert Wilson at Bell Labs 50 years ago. They won the Nobel Prize.
+                    </p>
+                    <p class="paragraph-md article-paragraph">
+                        Dr. Kovac has spent his career trying to read the secrets of these waves. He is one of four leaders of Bicep, which has
+                        operated a series of increasingly sensitive radio telescopes at the South Pole, where the thin, dry air creates ideal
+                        observing conditions. The others are Clement Pryke of the University of Minnesota, Jamie Bock of the California
+                        Institute of Technology and Dr. Kuo of Stanford.
+
+                    </p>
+                </article>
+                <aside class="asideContent">
+                
+                </aside>
+            </div>
+        </section>
+        <section class="publicitySection uBox-flex uMargin-bottom-md">
+            <div class="publicityContainer uBox-flex">
+        
+            </div>
         </section>
     </main>
 </body>
