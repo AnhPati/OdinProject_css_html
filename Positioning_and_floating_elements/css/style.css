@@ -87,6 +87,12 @@ ul {
     flex-direction: column;
 }
 
+.uBox-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
 .uPadding-sm {
     padding-left: 1.4rem;
     padding-right: 1.4rem;
@@ -136,11 +142,16 @@ ul {
     margin-bottom: 0;
     white-space: nowrap;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .cBtn-blue {
     color: #FFFFFF;
     background-color: #6288A5;
+}
+
+.cBtn.noBorder {
+    border: none;
 }
 
 .cLink-black {
@@ -355,6 +366,34 @@ ul {
     margin-right: 0;
     margin-left: auto;
     width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.asideItem {
+    border-bottom: 1px solid rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+}
+
+.asideImg {
+    width: 75px;
+    margin-right: 1rem;
+}
+
+.title-aside {
+    font-weight: 800;
+    padding-bottom: 2.5rem;
+}
+
+.title-asideItem {
+    font-weight: 600;
+    width: 100px;
+}
+
+.asideItem.cLink-black:hover {
+    text-decoration: underline!important;
 }
 
 .article-paragraph {
@@ -473,4 +512,46 @@ ul {
 
 .articleComment-container {
     justify-content: space-between!important;
+}
+
+/*=====[[ MORE ]]=====*/
+
+.moreSection {
+    display: flex;
+}
+
+.morePart {
+    display: flex;
+    flex-direction: column;
+}
+
+.mostPart {
+    width: 30rem;
+}
+
+.moreContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.moreItem {
+
+}
+
+/*=====[[ MEDIA QUERIES ]]=====*/
+
+@media screen and (max-width: 1200px) {
+    .asideImg {
+        display: none;
+    }
+
+    .title-asideItem {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .asideContent {
+        display: none;
+    }
 }
