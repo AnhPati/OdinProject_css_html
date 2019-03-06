@@ -119,6 +119,10 @@ ul {
     margin-right: 1.2rem;
 }
 
+.uMargin-top-xxxs {
+    margin-top: 0.2rem;
+}
+
 .uMargin-top-xxs {
     margin-top: 0.5rem;
 }
@@ -598,6 +602,15 @@ ul {
     justify-content: space-between;
 }
 
+.footerSection::before {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 0px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-top: 2px solid rgb(226, 226, 226);
+}
+
 .footerTitle p {
     color: #999;
 }
@@ -607,16 +620,29 @@ ul {
     justify-content: space-between;
 }
 
+.footerNav > ul {
+    padding-inline-start: 0;
+}
+
 .footerNav-text {
     font-weight: 400!important;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
 }
 
+.suscribeContainer {
+    padding-left: 1rem!important;
+    border-left: rgb(226, 226, 226) solid 1px;
+}
+
 .suscribeTitle {
     font-weight: 800!important;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
+}
+
+.suscribeBorder {
+    border-top: rgb(226, 226, 226) solid 1px;
 }
 
 /*=====[[ MEDIA QUERIES ]]=====*/
