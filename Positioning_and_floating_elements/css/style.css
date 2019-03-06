@@ -81,6 +81,10 @@ ul {
     font-weight: 800;
 }
 
+.text-gray {
+    color: #999;
+}
+
 /*=====[[ UTILITARY ]]=====*/
 
 .uBox-flex {
@@ -604,7 +608,15 @@ ul {
 }
 
 .footerNav-text {
-    font-weight: 600!important;
+    font-weight: 400!important;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.suscribeTitle {
+    font-weight: 800!important;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 
 /*=====[[ MEDIA QUERIES ]]=====*/
