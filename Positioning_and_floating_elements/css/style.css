@@ -40,6 +40,13 @@ ul {
     line-height: 2.2rem;
 }
 
+.paragraph-xxxs {
+    font-family: 'Taviraj', serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
 .paragraph-xxs {
     font-family: 'Taviraj', serif;
     font-size: 0.8rem;
@@ -90,7 +97,7 @@ ul {
 .uBox-grid-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2rem;
+    grid-column-gap: 1.4rem;
 }
 
 .uPadding-sm {
@@ -101,6 +108,11 @@ ul {
 .uMargin-xxs {
     margin-left: 0.2rem;
     margin-right: 0.2rem;
+}
+
+.uMargin-md {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 }
 
 .uMargin-top-xxs {
@@ -115,6 +127,10 @@ ul {
     margin-top: 3rem;
 }
 
+.uMargin-bottom-xxs {
+    margin-bottom: 0.5rem;
+}
+
 .uMargin-bottom-sm {
     margin-bottom: 1rem;
 }
@@ -125,6 +141,10 @@ ul {
 
 .uMargin-none {
     margin: 0;
+}
+
+.uUnderline-none {
+    text-decoration: none;
 }
 
 /*=====[[ COMPONENT ]]=====*/
@@ -523,19 +543,53 @@ ul {
 .morePart {
     display: flex;
     flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 7.5rem;
 }
 
 .mostPart {
     width: 30rem;
+    margin-right: 7.5rem;
+    border-top: #000 solid 1px;
 }
 
 .moreContainer {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    border-top: #000 solid 1px;
 }
 
 .moreItem {
+    
+}
 
+.moreItem p{
+    color: #999;
+}
+
+.moreItem-caption > p {
+    text-align: end;
+}
+
+.mostItem {
+    border-top: rgb(226, 226, 226) solid 1px;
+}
+
+/*=====[[ FOOTER ]]=====*/
+
+.footerTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerTitle p {
+    color: #999;
+}
+
+.footerNav {
+    display: flex;
 }
 
 /*=====[[ MEDIA QUERIES ]]=====*/
