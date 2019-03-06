@@ -183,6 +183,15 @@ ul {
     color: #326891;
 }
 
+.cLink-underline {
+    color: #000;
+    text-decoration: none;
+}
+
+.cLink-underline:hover {
+    text-decoration: underline;
+}
+
 .cBtn-xl {
     padding: 0.7rem 6.5rem 0.7rem 6.5rem;
 }
@@ -561,10 +570,6 @@ ul {
     border-top: #000 solid 1px;
 }
 
-.moreItem {
-    
-}
-
 .moreItem p{
     color: #999;
 }
@@ -579,6 +584,11 @@ ul {
 
 /*=====[[ FOOTER ]]=====*/
 
+.footerSection {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
 .footerTitle {
     display: flex;
     justify-content: space-between;
@@ -590,6 +600,11 @@ ul {
 
 .footerNav {
     display: flex;
+    justify-content: space-between;
+}
+
+.footerNav-text {
+    font-weight: 600!important;
 }
 
 /*=====[[ MEDIA QUERIES ]]=====*/
