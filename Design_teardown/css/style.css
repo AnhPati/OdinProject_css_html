@@ -21,7 +21,7 @@ body {
 /*=====[[ UTILITARY ]]=====*/
 
 .uBox-flex {
-    display: flex;
+    display: flex!important;
 }
 
 .uBox-flex.column {
@@ -46,6 +46,18 @@ body {
     padding: 0;
 }
 
+.uMarginTop-xs {
+    margin-top: 0.2rem;
+}
+
+.uMarginBottom-xs {
+    margin-bottom: 0.2rem;
+}
+
+.uMarginTop-sm {
+    margin-top: 0.4rem;
+}
+
 .uMargin-none {
     margin: 0;
 }
@@ -58,41 +70,116 @@ body {
 /*=====[[ COLORS ]]=====*/
 
 .important-10 {
-    background-color: #EFEFEF;
+    background-color: rgb(238, 238, 238);
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
 .important-20 {
-    background-color: #D3D3D3;
+    background-color: rgb(202, 202, 202);
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
 .important-30 {
-    background-color: #CECECE;
+    background-color: rgb(172, 172, 172);
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
 .important-40 {
-    background-color: #A9A9A9;
+    background-color: rgb(138, 138, 138);
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
 .important-50 {
-    background-color: #2F4F4F;
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantText-10 {
+    background-color: rgb(175, 238, 247);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantText-20 {
+    background-color: rgb(147, 201, 209);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantText-30 {
+    background-color: rgb(108, 148, 155);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantText-40 {
+    background-color: rgb(85, 117, 122);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantText-50 {
+    background-color: rgb(66, 91, 95);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantImg-10 {
+    background-color: rgb(230, 178, 208);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantImg-20 {
+    background-color: rgb(190, 148, 173);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantImg-30 {
+    background-color: rgb(143, 111, 130);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantImg-40 {
+    background-color: rgb(110, 86, 101);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.importantImg-50 {
+    background-color: rgb(82, 63, 75);
     width: 100%;
     height: 100%;
     display: inline-block;
 }
 
 /*=====[[ BLOCKS ]]=====*/
+
+.block-xxs {
+    width: 5rem;
+    height: 2.5rem;
+}
 
 .block-xs {
     width: 10rem;
@@ -187,6 +274,26 @@ body {
     width: 20rem;
 }
 
+.logoImg {
+    width: 10rem;
+    height: 5rem;
+}
+
+.navImg {
+    width: 3rem;
+    height: 3.5rem;
+}
+
+.navTitle {
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.navText {
+    width: 5rem;
+    height: 0.5rem;
+}
+
 /*=====[[ LASTS ARTICLES ]]=====*/
 
 .lastArticleContainer {
@@ -206,6 +313,16 @@ body {
     top: 0;
     right: 0;
     margin: 1.5rem 0.5rem 0 0;
+}
+
+.changeColorImg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.changeColorText {
+    width:4rem;
+    height:2rem;
 }
 
 .lastArticleItem {
