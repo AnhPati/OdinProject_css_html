@@ -6,11 +6,40 @@ body {
 /*=====[[ TYPOGRAPHY ]]=====*/
 
 /*=====[[ LAYOUT ]]=====*/
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
 
 /*=====[[ UTILITARY ]]=====*/
 
 .uBox-flex {
     display: flex;
+}
+
+.uBox-flex.column {
+    flex-direction: column;
+}
+
+.uBox-flex.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.uBox-flex.column-centered {
+    flex-direction: column;
+    align-items: center;
+}
+
+.uPadding-xs {
+    padding: 0.2rem;
 }
 
 .uPadding-none {
@@ -23,26 +52,121 @@ body {
 
 /*=====[[ COMPONENTS ]]=====*/
 
+.cList-none {
+    list-style: none;
+}
 /*=====[[ COLORS ]]=====*/
 
 .important-10 {
     background-color: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .important-20 {
     background-color: #D3D3D3;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .important-30 {
     background-color: #CECECE;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .important-40 {
     background-color: #A9A9A9;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .important-50 {
     background-color: #2F4F4F;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+/*=====[[ BLOCKS ]]=====*/
+
+.block-xs {
+    width: 10rem;
+    height: 5rem;
+}
+
+.block-sm {
+    width: 20rem;
+    height: 10rem;
+}
+
+.block-md {
+    width: ;
+    height: ;
+}
+
+.block-lg {
+    width: ;
+    height: ;
+}
+
+.block-xl {
+    width: ;
+    height: ;
+}
+
+.blockBtn-xs {
+    width: ;
+    height: ;
+}
+
+.blockBtn-sm {
+    width: ;
+    height: ;
+}
+
+.blockBtn-md {
+    width: 10rem;
+    height: 5rem;
+}
+
+.blockBtn-lg {
+    width: ;
+    height: ;
+}
+
+.blockBtn-xl {
+    width: ;
+    height: ;
+}
+
+.blockText-xs {
+    width: 10rem;
+    height: 2rem;
+}
+
+.blockText-sm {
+    width: 15rem;
+    height: 2rem;
+}
+
+.blockText-md {
+    width: 20rem;
+    height: 2rem;
+}
+
+.blockText-lg {
+    width: 20rem;
+    height: 4rem;
+}
+
+.blockText-xl {
+    width: 30rem;
+    height: 6rem;
 }
 
 /*=====[[ NAVIGATION ]]=====*/
@@ -52,7 +176,6 @@ body {
 }
 
 .navItem {
-    border: solid 1px #708090;
     list-style: none;
     width: 100%;
     height: 10rem;
@@ -62,4 +185,93 @@ body {
 
 .logoContainer {
     width: 20rem;
+}
+
+/*=====[[ LASTS ARTICLES ]]=====*/
+
+.lastArticleContainer {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.lastArticleTitle {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.changeColorContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem 0.5rem 0 0;
+}
+
+.lastArticleItem {
+    height: 30rem;
+}
+
+/*=====[[ LASTS POSTS ]]=====*/
+
+.lastPostContainer {
+    flex-wrap: wrap;
+}
+
+.lastPostItem, .membershipItem, .sponsorItem {
+    height: 25rem;
+}
+
+.latestPostLink {
+    height: 5rem;
+}
+
+/*=====[[ EVENTS ]]=====*/
+.eventContainer {
+    height: 60rem;
+}
+
+/*=====[[ COMMUNITY LINKS ]]=====*/
+
+.communityLinkContainer {
+    flex-wrap: wrap;
+}
+
+.communityLinkItem {
+    height: 20rem;
+}
+
+.latestCommunityLink {
+    height: 5rem;
+}
+
+/*=====[[ BOOKS ]]=====*/
+
+.bookContainer {
+    height: 20rem;
+}
+
+/*=====[[ Currated Posts ]]=====*/
+
+.curratedPostContainer {
+    flex-wrap: wrap;
+}
+
+/*=====[[ Newsletters ]]=====*/
+.newslettersContainer {
+    height: 45rem;
+}
+
+.allArticlesLink {
+    height: 5rem;
+}
+
+/*=====[[ Footer ]]=====*/
+
+.tagContainer {
+    flex-wrap: wrap;
+}
+
+.tagItem {
+    width: 4rem;
 }
