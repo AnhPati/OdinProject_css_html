@@ -14,6 +14,10 @@ body {
     width: 50%;
 }
 
+.w-75 {
+    width: 75%;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -33,6 +37,11 @@ body {
     align-items: center;
 }
 
+.uBox-flex.started {
+   justify-content: flex-start;
+   align-items: center;
+}
+
 .uBox-flex.column-centered {
     flex-direction: column;
     align-items: center;
@@ -46,12 +55,24 @@ body {
     padding: 0;
 }
 
-.uMarginTop-xs {
-    margin-top: 0.2rem;
-}
-
 .uMarginBottom-xs {
     margin-bottom: 0.2rem;
+}
+
+.uMarginBottom-sm {
+    margin-bottom: 1rem;
+}
+
+.uMarginBottom-md {
+    margin-bottom: 2rem;
+}
+
+.uMarginBottom-lg {
+    margin-bottom: 4rem;
+}
+
+.uMarginTop-xs {
+    margin-top: 0.2rem;
 }
 
 .uMarginTop-sm {
@@ -62,12 +83,20 @@ body {
     margin-top: 2rem;
 }
 
+.uMarginTop-lg {
+    margin-top: 4rem;
+}
+
 .uMarginTop-xl {
     margin-top: 10rem;
 }
 
-.uMarginBottom-md {
-    margin-bottom: 2rem;
+.uMarginLeft-lg {
+    margin-left: 6rem;
+}
+
+.uMarginRight-md {
+    margin-right: 3rem;
 }
 
 .uMargin-none {
@@ -209,13 +238,13 @@ body {
 }
 
 .block-md {
-    width: ;
-    height: ;
+    width: 20rem;
+    height: 15rem;
 }
 
 .block-lg {
-    width: ;
-    height: ;
+    width: 25rem;
+    height: 20rem;
 }
 
 .block-xl {
@@ -229,18 +258,18 @@ body {
 }
 
 .blockBtn-sm {
-    width: ;
-    height: ;
+    width: 6rem ;
+    height: 2rem ;
 }
 
 .blockBtn-md {
-    width: 10rem;
-    height: 5rem;
+    width: 8rem;
+    height: 2rem;
 }
 
 .blockBtn-lg {
-    width: ;
-    height: ;
+    width: 12rem;
+    height: 3rem;
 }
 
 .blockBtn-xl {
@@ -278,6 +307,11 @@ body {
     height: 6rem;
 }
 
+.blockText-xxl {
+    width: 35rem;
+    height: 15rem;
+}
+
 .blockIcon-xxs {
     width: 0.4rem;
     height: 0.4rem;
@@ -286,6 +320,36 @@ body {
 .blockIcon-sm {
     width: 1rem;
     height: 1rem;
+}
+
+.blockIcon-md {
+    width: 1rem;
+    height: 1rem;
+}
+
+.blockSquare-xs {
+    width: 3rem;
+    height: 3rem;
+}
+
+.blockSquare-sm {
+    width: 6rem;
+    height: 6rem;
+}
+
+.blockSquare-md {
+    width: 10rem;
+    height: 10rem;
+}
+
+.blockSquare-lg {
+    width: 15rem;
+    height: 15rem;
+}
+
+.blockSquare-xl {
+    width: 20rem;
+    height: 20rem;
 }
 
 /*=====[[ NAVIGATION ]]=====*/
@@ -385,20 +449,35 @@ body {
 }
 
 .lastPostItem, .membershipItem, .sponsorItem {
-    height: 25rem;
+    height: auto;
 }
 
-.lasPostItem-header{
-    margin: 5rem 0.6rem;
+.lastPostItem-link {
+    align-self: flex-start;
+    margin-top: 14rem;
+}
+
+.sponsorItem-body {
+    height: 100%;
+}
+
+.membershipItem-body {
+    margin-top: 3.7rem;
+    margin-bottom: 3.7rem;
 }
 
 .latestPostLink {
-    height: 5rem;
+    height: auto;
 }
 
 /*=====[[ EVENTS ]]=====*/
 .eventContainer {
-    height: 60rem;
+    height: auto;
+}
+
+.eventContainer-body {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 /*=====[[ COMMUNITY LINKS ]]=====*/
@@ -408,17 +487,37 @@ body {
 }
 
 .communityLinkItem {
-    height: 20rem;
+    height: auto;
+}
+
+.communityLinkItem-body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.first .communityLinkItem-body {
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .latestCommunityLink {
-    height: 5rem;
+    height: auto;
 }
 
 /*=====[[ BOOKS ]]=====*/
 
 .bookContainer {
-    height: 20rem;
+    height: auto;
+}
+
+.bookImg-container {
+    position: absolute;
+}
+
+.bookImg-item {
+    position: absolute;
+    top: -5rem;
+    left: 3rem;
 }
 
 /*=====[[ Currated Posts ]]=====*/
