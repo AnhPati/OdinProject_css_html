@@ -526,6 +526,10 @@ body {
     flex-wrap: wrap;
 }
 
+.curratedPostItem {
+    padding: 1.5rem 2rem 4rem 2rem;
+}
+
 /*=====[[ Newsletters ]]=====*/
 .newslettersContainer {
     height: 45rem;
