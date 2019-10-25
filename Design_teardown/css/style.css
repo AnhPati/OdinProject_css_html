@@ -103,6 +103,10 @@ body {
     margin: 0;
 }
 
+.uBlock-inline {
+    display: inline-block;
+}
+
 /*=====[[ COMPONENTS ]]=====*/
 
 .cList-none {
@@ -111,6 +115,11 @@ body {
 
 .cLink-50:hover {
     background-color: rgb(110, 86, 101);
+}
+
+.cInput-none {
+    padding: 0;
+    border-width: 0;
 }
 
 /*=====[[ COLORS ]]=====*/
@@ -323,8 +332,8 @@ body {
 }
 
 .blockIcon-md {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .blockSquare-xs {
@@ -532,19 +541,33 @@ body {
 
 /*=====[[ Newsletters ]]=====*/
 .newslettersContainer {
-    height: 45rem;
+    height: auto;
 }
 
 .allArticlesLink {
-    height: 5rem;
+    height: auto;
 }
 
 /*=====[[ Footer ]]=====*/
+
+.footerContainer {
+    position: relative;
+}
 
 .tagContainer {
     flex-wrap: wrap;
 }
 
 .tagItem {
-    width: 4rem;
+    margin-left: 2rem;
+}
+
+.footerLinkContainer {
+    flex-wrap: wrap;
+}
+
+.footerImg {
+    position: absolute;
+    bottom: 1rem;
+    left: 25rem;
 }
